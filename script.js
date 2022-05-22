@@ -11,11 +11,11 @@ function generateTarget() {
 function compareGuesses(user, computer, target) {
     let humanGuessDifference = Math.abs(target - user);
     let computerGuessDifference = Math.abs(target - computer);
-    return humanGuessDifference <= computerGuessDifference
+    return humanGuessDifference <= computerGuessDifference;
 };
 
 function updateScore(str) {
-    (str == 'human') ? humanScore++ : computerScore++;
+    (str === 'human') ? humanScore++ : computerScore++;
 };
 
 function advanceRound() {
